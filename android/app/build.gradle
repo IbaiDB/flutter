@@ -22,6 +22,47 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+    //A PARTIR DE AQUÍ TODO ESTÁ MAL 100%------------------------------------------------------------------------------------------------------------------
+
+    //VARIABLES PARA FLAVORS
+
+ext{
+
+
+    appIdForMenu = "\"APP-LOYALTY-AND\""
+    startMenu = "\"Start\""
+    footerMenuId = "\"Footer\""
+    homeMenuId = "\"Home\""
+    homeListMenuId = "\"List\""
+
+    //DIMENSIÓN DESARROLLO
+
+    endPointDevRuizGalan = "\"https://comerzzia-pre.supermercadosruizgalan.es/\""
+    apiKeyDevRuizGalan = "\"peWHodwIMKDFvcdhYxQRe2faGvhXw2\""
+    uidSitioDevRuizGalan =  "\"TOL\""
+    uidActividadDevRuizGalan = "\"b5bbb72f-3ea8-4d68-9d10-25586d9ac1e3\""
+    shopUrlDevRuizGalan = "\"https://sol-pre.supermercadosruizgalan.es/\""
+    pamphletsUrlDevRuizGalan = "\"https://supermercadosruizgalan.es/folleto/Folleto.pdf\""
+    rememberPassDevRuizGalan = "\"\""
+    urlPolicityDevRuizGalan = "\"https://sol-pre.supermercadosruizgalan.es/politica-de-privacidad-y-cookies\""
+
+    //DIMENSIÓN PRODUCTO
+
+    endPointProRuizGalan = "\"https://comerzzia.supermercadosruizgalan.es/\""
+    apiKeyProRuizGalan = "\"dKq1COMWXaQZ1jYja09nRhKUpLsKlN\""
+    uidSitioProRuizGalan =  "\"TOL\""
+    uidActividadProRuizGalan = "\"b5bbb72f-3ea8-4d68-9d10-25586d9ac1e3\""
+    shopUrlProRuizGalan = "\"https://www.supermercadosruizgalan.es\""
+    pamphletsUrlProRuizGalan = "\"https://supermercadosruizgalan.es/folleto/Folleto.pdf\""
+    rememberPassProRuizGalan = "\"\""
+    urlPolicityProRuizGalan = "\"https://www.supermercadosruizgalan.es/politica-de-privacidad-y-cookies\""
+
+    //ESTO NO SÉ NI QUE ES
+    appVersionNameRuizGalan = "2.1.2"
+    appVersionRuizGalan = 7
+    appIdRuizGalan = "com.comerzzia.ruizgalan"
+}
+
 android {
     namespace "com.example.flutter_demo"
     compileSdkVersion flutter.compileSdkVersion
@@ -61,44 +102,11 @@ android {
         }
     }
 
-    //A PARTIR DE AQUÍ TODO ESTÁ MAL 100%------------------------------------------------------------------------------------------------------------------
-
-    //VARIABLES PARA FLAVORS
-
-    //DIMENSIÓN DESARROLLO
-
-    endPointDevRuizGalan = "\"https://comerzzia-pre.supermercadosruizgalan.es/\""
-    apiKeyDevRuizGalan = "\"peWHodwIMKDFvcdhYxQRe2faGvhXw2\""
-    uidSitioDevRuizGalan =  "\"TOL\""
-    uidActividadDevRuizGalan = "\"b5bbb72f-3ea8-4d68-9d10-25586d9ac1e3\""
-    shopUrlDevRuizGalan = "\"https://sol-pre.supermercadosruizgalan.es/\""
-    pamphletsUrlDevRuizGalan = "\"https://supermercadosruizgalan.es/folleto/Folleto.pdf\""
-    rememberPassDevRuizGalan = "\"\""
-    urlPolicityDevRuizGalan = "\"https://sol-pre.supermercadosruizgalan.es/politica-de-privacidad-y-cookies\""
-
-    //DIMENSIÓN PRODUCTO
-
-    endPointProRuizGalan = "\"https://comerzzia.supermercadosruizgalan.es/\""
-    apiKeyProRuizGalan = "\"dKq1COMWXaQZ1jYja09nRhKUpLsKlN\""
-    uidSitioProRuizGalan =  "\"TOL\""
-    uidActividadProRuizGalan = "\"b5bbb72f-3ea8-4d68-9d10-25586d9ac1e3\""
-    shopUrlProRuizGalan = "\"https://www.supermercadosruizgalan.es\""
-    pamphletsUrlProRuizGalan = "\"https://supermercadosruizgalan.es/folleto/Folleto.pdf\""
-    rememberPassProRuizGalan = "\"\""
-    urlPolicityProRuizGalan = "\"https://www.supermercadosruizgalan.es/politica-de-privacidad-y-cookies\""
-
-
-
-    //ESTO NO SÉ NI QUE ES
-    appVersionNameRuizGalan = "2.1.2"
-    appVersionRuizGalan = 7
-    appIdRuizGalan = "com.comerzzia.ruizgalan"
-
     flavorDimensions "producto", "enviroment"
     productFlavors{
 
          ruizgalan{
-            dimension "product"
+            dimension "producto"
             applicationId project.appIdRuizGalan
             versionCode project.appVersionRuizGalan
             versionName project.appVersionNameRuizGalan
@@ -108,8 +116,8 @@ android {
             buildConfigField("String", "footerMenuId", "${footerMenuId}")
             buildConfigField("String", "homeListMenuId", "${homeListMenuId}")
             buildConfigField("Boolean", "showConfigButton", "false")
-            buildConfigField("String", "pais1", "${pais1}")
-            buildConfigField("String", "pais2", "${pais2}")
+            //buildConfigField("String", "pais1", "${pais1}")
+            //buildConfigField("String", "pais2", "${pais2}")
 
         }
 

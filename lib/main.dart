@@ -34,7 +34,7 @@ class MainApp extends StatelessWidget {
       home: LoginView(),
     );
   }
-}
+}   
 
 Future<void> fetchToken() async {
   final securityApi = SecurityApi();
